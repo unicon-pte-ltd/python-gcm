@@ -203,7 +203,7 @@ class GCM(object):
                 "There was an internal error in the GCM server while trying to process the request")
 
         if is_json:
-            response = json.loads(response)
+            return json.loads(response)
         return response
 
     def raise_error(self, error):
